@@ -76,6 +76,9 @@ const LoginPage = () => {
         </Head>
         <main className={styles.loginPage}>
             <Header template="basic" />
+            <div className={styles.bgContainer}>
+                <Image src='/static/images/login-bg.jpg' layout="fill" />
+            </div>
             <div className={styles.loginContainer}>
                 <div className={styles.loginBox}>
                     <span>Sign in</span>
