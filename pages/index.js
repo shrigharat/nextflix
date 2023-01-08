@@ -3,8 +3,7 @@ import Banner from "../components/banner/banner";
 import CardList from "../components/card-list/card-list";
 import Header from "../components/header/header";
 import styles from "../styles/Home.module.css";
-import data from "../data/videos.json";
-import { getVideosByKeyWord, getPopularVideos, getWatchItAgainVideos } from "../lib/videos"
+import { getVideosByKeyWord, getWatchItAgainVideos } from "../lib/videos"
 import { getUserIdFromToken } from "../lib/utils";
 
 export async function getServerSideProps(context) {
@@ -18,8 +17,6 @@ export async function getServerSideProps(context) {
     getVideosByKeyWord('netflix trailers'),
     getWatchItAgainVideos(userId, token)
   ]);
-  // const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
-  // const [trailerVideos, popularVideos, travelVideos, upcomingVideos] = [[], [], [], []]
   return { props: { dataList: {
     trailerVideos,
     popularVideos,
@@ -36,6 +33,18 @@ export default function Home({ dataList }) {
       <Head>
         <title>Nextflix</title>
         <meta name="description" content="Netflix replica by Shrishail" />
+        <meta name="title" content={title} />
+        <meta name="description" content={description.substr(0, 16) + "..."} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nextflix" />
+        <meta property="og:description" content="Netflix replica by Shrishail" />
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" />
+
+        <meta property="twitter:card" content="Nextflix" />
+        <meta property="twitter:title" content="Nextflix" />
+        <meta property="twitter:description" content="Netflix replica by Shrishail" />
+        <meta property="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
