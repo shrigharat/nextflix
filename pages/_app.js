@@ -14,8 +14,14 @@ function MyApp({ Component, pageProps }) {
         const activeRoute = router.pathname;
         const isLoggedIn = await magicClient.user.isLoggedIn();
 
+        console.log({isLoggedIn});
         if (!isLoggedIn) {
-          router.push('/login');
+          if(activeRoute.includes('show/')) {
+            console.log({activeRoute});
+            setLoading(false);
+          } else{
+            router.push('/login');
+          }
         } else if (isLoggedIn && activeRoute === '/login') {
           router.push('/');
         } else {
@@ -27,7 +33,7 @@ function MyApp({ Component, pageProps }) {
       }
     };
     handleRedirection();
-  }, [])
+  }, []);
 
   useEffect(() => {
     const handleComplete = () => {
