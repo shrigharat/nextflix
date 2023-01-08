@@ -33,8 +33,8 @@ export default function Home({ dataList }) {
       <Head>
         <title>Nextflix</title>
         <meta name="description" content="Netflix replica by Shrishail" />
-        <meta name="title" content={title} />
-        <meta name="description" content={description.substr(0, 16) + "..."} />
+        <meta name="title" content="Nextflix" />
+        <meta name="description" content="Netflix replica by Shrishail" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Nextflix" />
