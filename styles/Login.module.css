@@ -1,0 +1,58 @@
+.loginPage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/static/images/login-bg.jpeg);
+}
+
+.loginContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+    min-width: 400px;
+    border-radius: 4px;
+    height: 30%;
+    padding: 2rem 4rem;
+    background-color: rgba(0,0,0,.85);
+}
+
+.loginBox span{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.loginBox input{
+    width: 100%;
+    background-color: #333;
+    outline: none;
+    padding: .5rem .8rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.loginBox p{
+    color: var(--red10);
+    font-size: 0.9rem;
+}
+
+.loginBox .inputError{
+    border-bottom: 1px solid var(--red10);
+}
+
+.loginBox button{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--red);
+    border-radius: 4px;
+    padding: .5rem;
+}

@@ -1,0 +1,24 @@
+.cardList{
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.cardList h2{
+    font-family: var(--inter-font);
+    font-size: 1.4rem;
+}
+
+.cardList .scrollableContainer{
+    padding: 1.4rem 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    overflow-x: scroll;
+}
+
+@media screen and (max-width: 600px) {
+    .cardList{
+        padding: 2rem 0;
+    }
+}

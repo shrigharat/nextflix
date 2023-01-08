@@ -1,0 +1,25 @@
+.myListPage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.listPageWrapper{
+    margin: 0 auto;
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listPageWrapper h1{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .listPageWrapper{
+        padding: 6rem 1rem;
+    }
+}

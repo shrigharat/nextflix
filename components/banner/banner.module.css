@@ -1,0 +1,64 @@
+.bannerWrapper{
+    position: relative;
+}
+
+.overlay{
+    
+}
+
+.imageWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.imageWrapper img{
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.5), rgba(0,0,0,0));
+}
+.bannerContent{
+    z-index: 2;
+    position: relative;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 1rem;
+}
+.bannerContent h1{
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+.bannerContent button{
+    background-color: var(--red);
+    padding: .7rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .bannerContent{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bannerContent{
+        width: 100%;
+    }
+
+    .overlay{
+        width: 100%;
+    }
+}
