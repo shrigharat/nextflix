@@ -15,7 +15,7 @@ const CardGrid = ({ dataList, title }) => {
                     const showId = item.id.videoId;
                     const imgURL = `https://i.ytimg.com/vi/${showId}/maxresdefault.jpg` || fallbackImgurl;
 
-                    return <Link href={`/show/${showId}`}>
+                    return <Link href={`/show/${showId}`} key={index}>
                         <a>
                             <Card
                                 size="small"
