@@ -5,6 +5,7 @@ import Header from "../components/header/header";
 import styles from "../styles/Login.module.css";
 import { magicClient } from "../lib/magic-client";
 import { Loader } from "../components/loader/loader";
+import Image from "next/image";
 
 const LoginPage = () => {
     const router = useRouter();
