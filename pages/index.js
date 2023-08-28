@@ -60,7 +60,7 @@ export default function Home({ dataList }) {
             rating: "U/A 16+",
             seasonsCount: 4,
           }}
-          showId="yQEondeGvKo"
+          showId="sBEvEcpnG7k"
         />
         <CardList title="Hollywood Trailers" cardSize="large" dataList={dataList.trailerVideos} />
         <CardList title="Watch it again" cardSize="small" dataList={dataList.watchItAgainVideos} />
