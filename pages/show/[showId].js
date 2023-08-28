@@ -7,7 +7,7 @@ import { getVideoDetailsById, processVideoDetails } from "../../lib/videos";
 import styles from "../../styles/Show.module.css";
 
 export async function getStaticPaths() {
-    const showList = ["yQEondeGvKo", "WWWDskI46Js", "BUjXzrgntcY"];
+    const showList = ["sBEvEcpnG7k", "WWWDskI46Js", "BUjXzrgntcY"];
     const paths = showList.map((showId) => {
         return {
             params: { showId }
