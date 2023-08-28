@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./card.module.css";
+import { useState } from "react";
 
 const Card = ({ size, imgURL, title }) => {
   const configMap = {
